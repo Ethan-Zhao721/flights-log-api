@@ -1,1 +1,61 @@
-
+{
+	"info": {
+		"_postman_id": "5dd39c01-6dd8-4649-9fe8-3060b18a7196",
+		"name": "API2 Aircraft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetBasedOn Aircraft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"aircraft",
+						"AC456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBasedOn Aircraft &Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC456?status=canceled",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"aircraft",
+						"AC456"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "canceled"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
