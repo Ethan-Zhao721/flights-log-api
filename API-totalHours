@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "140f71ad-a074-4649-ad0b-8dc60b5d6dd4",
+		"name": "API3 TotalHours",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "startTime & endTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/flights/total-hours?startDate=2024-01-01&endDate=2024-03-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"total-hours"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-03-20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
