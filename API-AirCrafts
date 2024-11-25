@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC456",
+					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC001",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -22,7 +22,7 @@
 						"v1",
 						"flights",
 						"aircraft",
-						"AC456"
+						"AC001"
 					]
 				}
 			},
@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC456?status=canceled",
+					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC001?status=scheduled",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -45,12 +45,41 @@
 						"v1",
 						"flights",
 						"aircraft",
-						"AC456"
+						"AC001"
 					],
 					"query": [
 						{
 							"key": "status",
-							"value": "canceled"
+							"value": "scheduled"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error-wrongStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/flights/aircraft/AC001?status=departedSSS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"aircraft",
+						"AC001"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "departedSSS"
 						}
 					]
 				}
